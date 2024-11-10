@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hbs-minecrafty-things",
+	"version": "${version}",
+	"name": "HBs Minecrafty Things",
+	"description": "Copper/amathyst/emerald Armour & Tools, new drilling, Timber & smelting enchantments, easy to use config gui and file and each feature has in-depth configs!",
+	"authors": [
+		"hakerboi(aka.HB)"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/8WXSVbQeU4",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hbs-minecrafty-things/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hakerboi.hbsminecraftythings.HBsMinecraftyThings"
+		],
+		"fabric-datagen": [
+			"net.hakerboi.hbsminecraftythings.HBsMinecraftyThingsDataGenerator"
+		],
+		"client": [
+			"net.hakerboi.hbsminecraftythings.HbsMinecraftyThingsClient"
+		]
+	},
+	"mixins": [
+		"hbs-minecrafty-things.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
